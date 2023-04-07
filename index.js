@@ -14,6 +14,7 @@ app.use((req, res, next) => {
 
 app.post('/upload-audio', (req, res) => {
   const audioFile = req.files.audio;
+  console.log(audioFile)
   audioFile.mv('audio.mp3', (err) => {
     console.log('Run')
     if (err) {
