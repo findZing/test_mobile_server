@@ -27,7 +27,7 @@ app.post('/upload-audio', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.status(200).json('Hello')
+    res.status(200).json({audio: audioFile})
 })
 
 app.listen(3000, () => {
